@@ -11,10 +11,12 @@ public class coun {
         for(int i=1;i<=n;i++){
             if(flag){
                 num+=(Math.pow(x,pow))/foo(i);
+                flag=false;
 
             }
             else{
                 num-=(Math.pow(x,pow))/foo(i);
+                flag=true;
             }
             pow+=2;
         }
